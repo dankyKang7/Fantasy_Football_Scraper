@@ -15,6 +15,8 @@ by offensive strategy?'''
 #Import the required packages
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bs
+import pandas as pd
+import numpy as np
 
 #base url
 years = ['2018','2017','2016','2015','2014']
@@ -28,3 +30,6 @@ for year in years:
 html_2018 = urlopen(url_list[0])
 bsobj_2018 = bs(html_2018.read())
 bsobj_str = str(bsobj_2018)
+
+#Let's find the table and the get the data
+table_data_2018 = bsobj_2018.table.tbody.findAll('td')
