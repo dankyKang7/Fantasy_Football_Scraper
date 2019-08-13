@@ -32,4 +32,8 @@ bsobj_2018 = bs(html_2018.read())
 bsobj_str = str(bsobj_2018)
 
 #Let's find the table and the get the data
-table_data_2018 = bsobj_2018.table.tbody.findAll('td')
+table_data_2018 = str(bsobj_2018.table)
+table_data = pd.read_html(table_data_2018)
+
+#Get teh reciever data
+table_data.columns
