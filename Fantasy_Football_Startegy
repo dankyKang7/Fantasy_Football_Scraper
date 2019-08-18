@@ -1,0 +1,86 @@
+Yahoo Fantasy Football League
+
+Let's create a model of fantasy football playing
+12 teams (each team will take a slice of 12 from each individual position
+
+Goal is to score 125 points/week
+
+Points:
+ Offensive:
+ 25 yards = 1 point
+ passing TD = 4  points
+ INT = -1 point
+ Rush TD = 6 points
+ 10 yards rush = 1 point
+ 1 reception = 0.5 points
+ 10 yards receiving = 1 point
+ Receiving TD = 6 points
+ Return TD = 6 points
+ 2-point Conversion = 2 points
+ Fumbles Lost = -2 points
+ Offensvie Fumble Return TD = 6 points (rare)
+
+ Defensive:
+ Sack = 1point
+ Intercept = 2
+ Fumble Recovery = 2
+ TD = 6 points
+ Safety = 2
+ Block Kick = 2
+ 25 Return Yards = = 1
+ Points Allowed (0) = 10
+ 		(1-6) = 7
+		(7-13) = 4
+		(14-20) = 1
+		(21-27) = 0
+		(28-34) = -1
+		(35+)  = -4
+Extra Point Return  = 2
+
+Where do most of the points come from in fantasy football in our league???
+
+
+Positions
+
+QB:
+How many rounds should I wait to draft a QB??
+
+ 
+
+RB1:
+What is the distribution 
+RB2:
+
+WR1:
+What is the weekly distribution of WR's??
+
+WR2:
+What is the weekly distubtion of WR's???
+TE:
+ What is the weekly distributions of TE's???
+ If I draft 3 TE can I make up for the loss in getting a #1 rB?
+
+W-R-T:
+
+W-R-T:
+
+DEF:
+What is the distribution of data???
+
+
+
+Data Analysis Strategy
+
+https://www.pro-football-reference.com/years/2015/week_1.htm
+
+Variable name https://www.pro-football-reference.com/years/<enter year>/<enter_wek>.htm
+
+Then grab all of the the anchor links with the td class = 'right gamelink'
+
+Then access all of links for the data read to get the data.
+
+Once the html has been accessed filter down to 2 tables
+1. passing-rushing-receiving
+   This will work well as I want to evaluation individual players. It would requrire further breakdowns to get the offesne type but this is good starting data
+
+2. Defensive Rankings
